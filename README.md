@@ -2,7 +2,8 @@
 
 [![license](https://img.shields.io/github/license/The-Data-Appeal-Company/plotone-di-esecuzione.svg)](LICENSE)
 
-![alt Francisco Goya, Il 3 maggio 1808 (1814)](https://upload.wikimedia.org/wikipedia/commons/4/48/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_in_Google_Earth.jpg)
+![alt Francisco Goya, Il 3 maggio 1808 (1814)](https://3.bp.blogspot.com/-5aoN5Tb5VI0/TcAsgZFKBEI/AAAAAAAAAAM/BYSq47TvSOA/s1600/Goya.jpg)
+
 Francisco Goya, Il 3 maggio 1808 (1814)
 
 Plotone-di-Esecuzione is a tool to make concurrent queries on postgres read from file.
