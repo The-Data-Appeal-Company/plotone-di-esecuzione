@@ -7,6 +7,7 @@
 Francisco Goya, Il 3 maggio 1808 (1814)
 
 Plotone-di-Esecuzione is a tool to make concurrent queries on postgres read from file.
+The file must contain one query per line (; at the end of the line is not required)
 
 ## Build
 ```

@@ -68,8 +68,10 @@ fn main() {
             while !consumer.channel.is_empty() {
                 match consumer.channel.recv() {
                     Ok(sql) => {
-                        consumer.pg_client.execute(sql.as_str(), &[]).expect("query failed");
-                        println!("executed: {}", sql);
+                        match consumer.pg_client.execute(sql.as_str(), &[]) {
+                            Ok(_) => println!("executed: {}", sql),
+                            Err(e) => println!("error executing: {}, error: {:?}", sql, e)
+                        }
                     }
                     Err(e) => {
                         println!("cannot receive sql: {:?}", e)
