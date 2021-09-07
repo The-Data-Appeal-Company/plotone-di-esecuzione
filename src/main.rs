@@ -70,11 +70,11 @@ fn main() {
                     Ok(sql) => {
                         match consumer.pg_client.execute(sql.as_str(), &[]) {
                             Ok(_) => println!("executed: {}", sql),
-                            Err(e) => println!("error executing: {}, error: {:?}", sql, e)
+                            Err(e) => eprintln!("error executing: {}, error: {}", sql, e)
                         }
                     }
                     Err(e) => {
-                        println!("cannot receive sql: {:?}", e)
+                        eprintln!("cannot receive sql: {}", e)
                     }
                 }
             }
