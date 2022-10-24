@@ -51,7 +51,9 @@ fn main() {
     for (_, line) in reader.lines().enumerate() {
         let line = line.unwrap();
         let my_s = s.clone();
-        my_s.send(line).unwrap();
+        if !line.trim().is_empty() {
+            my_s.send(line).unwrap();
+        }
     }
 
     let mut consumers = Vec::new();
